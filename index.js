@@ -7,7 +7,7 @@ const KEY = process.env.UNSPLASH_KEY;
 const ENDPT = "https://api.unsplash.com/search/photos?page=1&query=";
 
 const cors = require("cors");
-const corsOptions = { origin: "https://moodpalette.netlify.app" };
+const corsOptions = { origin: "*" };
 app.use(cors(corsOptions));
 
 const checkOrigin = (req) => {
